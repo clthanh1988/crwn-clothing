@@ -30,4 +30,4 @@ export const selectCartTotal = createSelector(
       (accumulatedTotal, item) => accumulatedTotal + item.quantity * item.price,
       0
     )
-)
+);
