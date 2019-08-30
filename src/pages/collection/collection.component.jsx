@@ -13,7 +13,24 @@ import {
 } from './collection.styles';
 
 const CollectionPage = ({ collection }) => {
+  // useEffect(() => {
+  //   // Mimic componentWillUnmount
+  //   console.log('I am subscribing');
+  //   const unsubscribeFromCollections = firestore
+  //     .collection('collections')
+  //     .onSnapshot(snapshot => {
+  //       console.log(snapshot);
+  //     });
+
+  //   return () => {
+  //     // clean up Func
+  //     console.log('I am unsubscribing')
+  //     unsubscribeFromCollections()
+  //   };
+  // }, []);
+
   const { title, items } = collection;
+
   return (
     <CollectionPageContainer>
       <CollectionTitle>{title}</CollectionTitle>
